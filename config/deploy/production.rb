@@ -5,11 +5,6 @@ role :db,  %w{deployer@192.168.33.10}
 set :branch, fetch(:branch, 'master')
 set :deploy_to, '/home/deployer/www/project'
 
-set :ssh_options, {
-  forward_agent: true,
-  auth_methods: %w(publickey),
-  user: 'deployer',
-}
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
