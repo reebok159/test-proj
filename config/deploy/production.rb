@@ -1,9 +1,9 @@
-role :app, %w{deployer@192.168.33.10}
-role :web, %w{deployer@192.168.33.10}
-role :db,  %w{deployer@192.168.33.10}
+role :app, %w{deployer@178.128.164.0}
+role :web, %w{deployer@178.128.164.0}
+role :db,  %w{deployer@178.128.164.0}
 
 set :branch, fetch(:branch, 'master')
-set :deploy_to, '/home/deployer/www/project'
+set :deploy_to, '/home/deployer/blog'
 
 # server-based syntax
 # ======================

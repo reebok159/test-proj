@@ -1,6 +1,6 @@
 return if Rails.env.test? || Rails.env.development? rescue nil
 
-app_path = '/home/deployer/www/project'
+app_path = '/home/deployer/blog'
 
 directory "#{app_path}/current"
 rackup "#{app_path}/current/config.ru"
