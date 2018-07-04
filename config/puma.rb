@@ -2,6 +2,7 @@ return if Rails.env.test? || Rails.env.development? rescue nil
 
 app_path = '/home/deployer/blog'
 
+
 directory "#{app_path}/current"
 rackup "#{app_path}/current/config.ru"
 daemonize true
